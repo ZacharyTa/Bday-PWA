@@ -1,0 +1,25 @@
+{
+    "id" : "1",
+    "name": "PowerliftPal - Your Powerlifting Pal",
+    "short_name": "PowerliftPal",
+    "description" : "Create and track your powerlifting progress",
+    "icons": [
+      {
+        "src": "/icons/icon512_maskable.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "maskable"
+      },
+      {
+        "src": "/icons/icon512_rounded.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose":"any"
+      }
+    ],
+    "theme_color": "#8936FF",
+    "background_color": "#2EC6FE",
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "portrait"
+  }
