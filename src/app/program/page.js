@@ -11,10 +11,30 @@ const StickySection = styled.section`
   position: sticky;
   top: 0;
   z-index: 1000; // High z-index to ensure it's on top of other content
-  width: 50%; // Ensure full width
   background: inherit; // Optional: Match the background to your theme
   margin: 0 auto; // Center the section horizontally
   align: center
+  width: 100%; // Apply default width for small screens
+
+  @media (min-width: 520px) { // Adjust for phones in landscape
+    width: 100%;
+  }
+
+  @media (min-width: 768px) { // Adjust for tablets in portrait
+    width: 40%; // You can adjust this width based on your layout needs
+  }
+
+  @media (min-width: 1024px) { // Adjust for tablets in landscape
+    width: 40%; // Adjust this as necessary
+  }
+
+  @media (min-width: 1280px) { // Adjust for laptops
+    width: 40%; // Adjust this as necessary
+  }
+
+  @media (min-width: 1640px) { // Adjust for desktops
+    width: 40%; // This is typically narrower to align with the centered layout
+  }
 `;
 
 const StaticSection = styled.section`
