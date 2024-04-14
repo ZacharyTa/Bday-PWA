@@ -18,7 +18,7 @@ const ProgramPage = () => {
   };
 
   return (
-    <ProgramHeader isExpanded={isExpanded} onClick={toggleExpansion} style={{ background: 'var(--gray-a2)',}}>
+    <ProgramHeader isExpanded={isExpanded} onClick={toggleExpansion} style={{ background: 'var(--gray-a2)',}} >
       <Flex justify='between' p="5" my="-2">
         <Flex direction="column">
             <Text size="1" color="gray">PROGRAM NAME</Text>

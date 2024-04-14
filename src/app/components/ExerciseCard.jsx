@@ -4,7 +4,7 @@ import ExerciseSet from '@/components/ExerciseSet'
 
 const ExerciseCard = () => {
   return (
-    <Flex justify="center" align="center" height="100%" width={{ initial: '95%', xs: '95%', sm: '40%', md: '40%', lg:'40%', xl:'40%' }} >
+    <Flex justify="center" align="center" height="100%" width={{ initial: '100%', xs: '100%', sm: '40%', md: '40%', lg:'40%', xl:'40%' }} >
       <Container style={{ background: 'var(--gray-a2)', }} my={{ sm: '1', lg: '2' }}>
         <Flex direction="column">
           {/* Heading */}
