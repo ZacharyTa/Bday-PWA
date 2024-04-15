@@ -7,7 +7,7 @@ const ExerciseSet = ({ set, weight, rpe}) => {
     <Flex direction="column">
     {/* Rest of the sets here: Seperator, Set */}
         <Separator orientation="horizontal" size="4" />
-        <Flex justify="between" >
+        <Flex p="3" justify="between" >
             <Flex>
                 <Text size="4" >{set} </Text>
             </Flex>

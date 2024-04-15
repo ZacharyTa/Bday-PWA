@@ -6,8 +6,10 @@ import { Text, Flex } from '@radix-ui/themes';
 const ProgramHeader = styled.header`
   cursor: pointer;
   overflow: hidden; // Prevent content from overflowing during transition
-  transition: height 0.3s ease; // Smooth height transition
+  transition: max-height 3s ease; // Smooth height transition
   max-height: ${props => props.isExpanded ? '1000px' : '80px'}; // Adjust max-height to your needs
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+
 `;
 
 const ProgramPage = () => {
@@ -29,6 +31,12 @@ const ProgramPage = () => {
       </Flex>
       {isExpanded && (
         <div>
+          <p>More details about the program...</p>
+          <p>More details about the program...</p>
+          <p>More details about the program...</p>
+          <p>More details about the program...</p>
+          <p>More details about the program...</p>
+          <p>More details about the program...</p>
           <p>More details about the program...</p>
           <p>More details about the program...</p>
           <p>More details about the program...</p>
