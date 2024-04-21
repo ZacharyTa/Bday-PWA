@@ -1,4 +1,6 @@
-export default () => (
+import React from 'react'; // Ensure React is in scope when using JSX
+
+const Card = () => (
     <div className="birthdayCard">
       <div className="cardFront">
         <h3 className="happy">HAPPY BIRTHDAY TERRALYN!</h3>
@@ -20,4 +22,8 @@ export default () => (
       </div>
     </div>
   );
+
+  Card.displayName = 'Card'; // Setting displayName explicitly for better debugging
+
+export default Card;
   
