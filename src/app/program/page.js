@@ -5,6 +5,9 @@ import ExerciseCard from '@/components/ExerciseCard';
 import { Flex, Section } from '@radix-ui/themes'
 import ProgramHeader from '@/components/ProgramHeader';
 import styled from 'styled-components'; // Using styled-components for styling
+import { database } from '@/data/firebaseConfig'; // Correct the path as needed
+import { ref, onValue } from 'firebase/database';
+
 
 
 const StickySection = styled.section`
@@ -50,6 +53,21 @@ const StaticSection = styled.section`
 
 
 const ProgramPage = () => {
+  useEffect(() => {
+      const usersRef = ref(database, 'users');
+
+      // Subscribe to the 'users' node and keep a reference to the unsubscribe function
+      const unsubscribe = onValue(usersRef, (snapshot) => {
+          const data = snapshot.val();
+          console.log("Data: ", data);
+      }, {
+          onlyOnce: true
+      });
+
+      // Cleanup function that calls the unsubscribe function
+      return () => unsubscribe();
+  }, []);
+
     return (
       <>
       <StickySection >

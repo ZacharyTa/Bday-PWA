@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Flex, Text, Badge, Separator } from '@radix-ui/themes'
 import ExerciseSet from '@/components/ExerciseSet'
+import { Ellipsis, ListChecks } from "lucide-react";
 
 const ExerciseCard = () => {
   return (
@@ -8,21 +9,21 @@ const ExerciseCard = () => {
       <Container style={{ background: 'var(--gray-a2)', }} my={{ sm: '1', lg: '2' }}>
         <Flex direction="column">
           {/* Heading */}
-          <Flex justify="between" width={'100%'}>
+          <Flex p="2" justify="between" width={'100%'}>
             <Badge color="red" variant="outline">Muscle Group</Badge>
-            <Text size="2">Menu Icon</Text>
+            <Ellipsis size="28" color="gray" />
           </Flex>
-          <Flex justify="between" width={'100%'}>
+          <Flex p="2" justify="between" width={'100%'}>
             <Flex direction="column">
               <Text size="5">Exercise Name</Text>
               <Text size="1" color="gray">Core or Assistance</Text>
             </Flex>
-            <Text size="2" >Question stuff</Text>
+            <ListChecks size="24" color="gray" />
           </Flex>
           {/* Logging */}
 
-          <Flex direction="column" width={'100%'}> 
-            <Flex justify="between" width={'100%'}>
+          <Flex p="2" direction="column" width={'100%'}> 
+            <Flex p="2" justify="between" width={'100%'}>
               <Text size="2" color="gray">Set</Text>
               <Text size="2" color="gray">Reps</Text>
               <Text size="2" color="gray">RPE</Text>
