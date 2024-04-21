@@ -17,7 +17,7 @@ const Card = () => (
         <p>
           Happy birthday! I&apos;m glad I got to grow up with you, playing minecraft and watching cartoons together is valueable precious memory to me and I&apos;m grateful for you. You are a cheerful person and it&apos;s fun to be around you.
         </p>
-        <img src={"/terralyn.png"} alt="terrlayn eating" style={{ width: '45%', height: 'auto' }} />
+        <img src={"/terralyn.png"} alt="terrlayn eating" style={{ width: '40%', height: 'auto' }} />
         <p className="name">- Zach</p>
       </div>
     </div>
