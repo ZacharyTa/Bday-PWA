@@ -1,11 +1,11 @@
 {
-    "id" : "1",
-    "name": "PowerliftPal - Your Powerlifting Pal",
-    "short_name": "PowerliftPal",
-    "description" : "Create and track your powerlifting progress",
+    "id" : "4",
+    "name": "Terralyn's Present",
+    "short_name": "Terralyn",
+    "description" : "Terralyn's Present PWA",
     "icons": [
       {
-        "src": "/icons/icon512_maskable.png",
+        "src": "/icons/icon-384x384.png",
         "sizes": "512x512",
         "type": "image/png",
         "purpose": "maskable"
@@ -19,7 +19,7 @@
     ],
     "theme_color": "#8936FF",
     "background_color": "#2EC6FE",
-    "start_url": "/program",
+    "start_url": "/",
     "display": "standalone",
     "orientation": "portrait"
   }
